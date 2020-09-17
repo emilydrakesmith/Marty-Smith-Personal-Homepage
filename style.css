@@ -108,10 +108,15 @@ li {
 
 /* Applies to 1st <li> in the 'Contact Marty' article */
 .ol-linkedin {
-  list-style-image: url('images/linkedin-15px.png');  /* replace LinkedIn number with logo on ordered list */
+  list-style-image: url('images/linkedin-15px.png');  /* replaces <ol> list number with LinkedIn logo on ordered list */
 }
 
 /* Applies to 2nd <li> in the 'Contact Marty' article */
 .ol-github {
-  list-style-image: url('images/github-15px.png');  /* replace GitHub number with logo on ordered list */
+  list-style-image: url('images/github-15px.png');  /* replaces <ol> number with GitHub logo on ordered list */
+}
+
+/* Applies to 3rd <li> in the 'Contact Marty' article */
+.ol-twitter {
+  list-style-image: url('images/twitter-15px.jpg');  /* replaces <ol> number with Twitter logo on ordered list */
 }
