@@ -1,3 +1,8 @@
+/*
+ *   CSS for v1.1 of my professional website
+ *   CSS is arranged to use a mobile-first responsive design
+ */
+
 /* Set all HTML elements with border-box sizing, also accounts for pseudo-elements */
 *, *:before, *:after {
   box-sizing: border-box;
@@ -6,117 +11,21 @@
 /* Applies to all visible elements on the page */
 body {
   background-color: #D7CFC9;         /* body background color */
-  font-family: Manrope, sans-serif;    /* font applies to all text aside from header and footer */
+  font-family: Manrope, sans-serif;    /* font applies to all text except where overridden */
 }
 
+/* Pseudo-classes for hyperlink colors */
 a:link    { color: #2f0e07;}    /* custom color for un-clicked links */
 a:visited { color: #5C6060;}    /* custom color for clicked links */
 a:hover   { color: #772014;}    /* custom color for links when hovered over */
 a:active  { color: #121B2C;}    /* custom color for links being actively clicked */
 
-/* Generic formatting applied to all images on the page unless overridden elsewhere */
-img {
-  display: block;         /* necessary for centering pictures */
-  margin-left: auto;      /* without this pictures will align left */
-  margin-right: auto;     /* without this pictures will align right */
+/* Header */
+header {
+
 }
 
-/* Formatting specific to my self-portrait */
-.picture-frame {
-  border-radius: 12px;     /* round off the corners of my self-portrait */
-  border: 2px solid;       /* add a border to my self-portrait */
-}
-
-/* Header formatting */
-body > header {
-  padding: 1px;                       /* without this the top of the element is screwy */
-  margin-bottom: 10px;                /* adds negative space immediately below the header */
-  text-align: center;                 /* centers text */
-  height: 190px;                      /* vertical height of footer */
-  background-color: #121B2C;        /* header background color (repeated in footer) */
-  font-family: Verdana, sans-serif;   /* clean font with a reasonable fallback */
-  font-size: 20px;                    /* header font size */
-  font-weight: 900;                   /* font boldfaced */
-  letter-spacing: 4px;                /* extra spacing between letters */
-  color: #D7CFC9;                   /* header text color == body background color */
-}
-
-/* Formatting of "Marty Smith" - overrides header formatting */
-/* This section must stay AFTER "body > header" due to cascasing override sequence */
-body > header > div {
-  font-variant: small-caps;     /* replaces lower-case characters with small upper-case versions */
-  font-size: 50px;              /* font size */
-  letter-spacing: 20px;         /* extra spacing between letters */
-  margin-bottom: -28px;         /* pulls 'software engineer' text closer to 'Marty Smith' text */
-}
-
-/* This section of code I'm using to format the three 'article' containers */
-.main-objs {
-  margin-left: auto;      /* this line and the next keep the container centered horizontally */
-  margin-right: auto;     /* ^^^^^^^^^^^^^^^^^ see comment directly above ^^^^^^^^^^^^^^^^^^ */
-  width: 800px;           /* element is 800 pixels wide */
-  padding: 20px;          /* padding inside container around content, necessary for top & bottom margins */
-  //border: 3px solid;      /* I only use this line for debugging to see the element */
-}
-
-/* This ensures headline text is always centered even if local CSS dictates otherwise */
-h1, h2, h3 {
-  text-align: center !important;     /* all headline text is centered, overrides other rules */
-}
-
-/* This makes my horizontal rules pretty and color-coordinated with header & footer */
-hr {                            /* added bonus this will add margin between elements when used */
-  width: 600px;                 /* width of the line left-to-right */
-  border: 1px solid#121B2C;   /* this gives the line its appearance */
-}
-
-/* Formatting for the page footer */
+/* Footer */
 footer {
-  margin-top: 10px;                 /* adds negative space before the footer starts */
-  padding-top: 5px;                 /* adds blue space above text in footer */
-  padding-bottom: 20px;             /* trial and error this keeps my footer text vertically centered */
-  height: 45px;                     /* vertical height of footer */
-  background-color: #121B2C;      /* footer background color, coordinated with header and horizontal rules */
-  color: #D7CFC9;                 /* header & footer text color == body background color */
-}
-
-/* Headline in the footer */
-h3 {
-  text-align: center;
-  font-family: Verdana, sans-serif;   /* clean font with a reasonable fallback */
-  font-size: 12px;                    /* all font formatting to mimic header */
-  font-weight: 900;
-  letter-spacing: 4px;
-}
-
-/* Applies to all paragraph text which doesn't receive formatting rules elsewhere */
-article > p {               /* must be separate from container css rules due to padding */
-  text-align: left;         /* align text to left-margin */
-  padding-left: 50px;       /* negative space in container left of text */
-  padding-right: 50px;      /* negative space in container right of text */
-}
-
-/* Formatting for all ordered and unordered lists */
-ol, ul {
-  padding-left: 90px;     /* add indetation for line items in lists */
-}
-
-/* Formatting for all list line items, ordered and unordered */
-li {
-  margin-bottom: 5px;     /* add vertical spacing between line items in lists */
-}
-
-/* Applies to 1st <li> in the 'Contact Marty' article */
-.ol-linkedin {
-  list-style-image: url('images/linkedin-15px.png');  /* replaces <ol> list number with LinkedIn logo on ordered list */
-}
-
-/* Applies to 2nd <li> in the 'Contact Marty' article */
-.ol-github {
-  list-style-image: url('images/github-15px.png');  /* replaces <ol> number with GitHub logo on ordered list */
-}
-
-/* Applies to 3rd <li> in the 'Contact Marty' article */
-.ol-twitter {
-  list-style-image: url('images/twitter-15px.jpg');  /* replaces <ol> number with Twitter logo on ordered list */
+  
 }
