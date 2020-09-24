@@ -3,6 +3,11 @@ My personal homepage.
 
 Imported open-source font 'Manrope' from Google APIs.
 
+# Version Notes
+
+9/24 Downloaded repo from https://github.com/mhsmith321/Marty-Smith-Personal-Homepage.  Initializing as v1.01.
+     This version reflects as commit b6978cc74fbfba4897f1f46f55ebc923d0c3bc57.  Prior commits are viewable in
+     Git Bash via the git log command.
 
 # Special Thanks
 
