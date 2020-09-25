@@ -8,24 +8,88 @@
   box-sizing: border-box;
 }
 
-/* Applies to all visible elements on the page */
+/* DEBUG BORDER SCRIPT: */  /*  border: 3px solid red;  */
+
+
+/* --------  GENERAL STYLES  -------- */
+
+/* Body */
 body {
+  margin: 0;
   background-color: #D7CFC9;         /* body background color */
   font-family: Manrope, sans-serif;    /* font applies to all text except where overridden */
 }
 
 /* Pseudo-classes for hyperlink colors */
-a:link    { color: #2f0e07;}    /* custom color for un-clicked links */
-a:visited { color: #5C6060;}    /* custom color for clicked links */
-a:hover   { color: #772014;}    /* custom color for links when hovered over */
-a:active  { color: #121B2C;}    /* custom color for links being actively clicked */
+/* TODO: Change links back to stylized colors at end */
+a:link    {color: #2F0E07;}    /* custom color for un-clicked links */               /* TODO: #2F0E07 after troubleshooting */
+a:visited {color: #5C6060;}    /* custom color for clicked links */                  /* TODO: #5C6060 after troubleshooting */
+a:hover   {color: #772014;}    /* custom color for links when hovered over */        /* TODO: #772014 after troubleshooting */
+a:active  {color: #121B2C;}    /* custom color for links being actively clicked */   /* TODO: #121B2C after troubleshooting */
 
 /* Header */
 header {
-
+  padding: 1px;
+  background-color: #121B2C;        /* header background color (repeated in footer) */
+  color: #D7CFC9;                   /* header text color == body background color */
+  display: flex;
+  flex-direction: column;
 }
+
+header section{
+  font-family: 'Verdana, sans-serif';
+  text-align: center;
+  margin-top: -40px;
+  margin-bottom: 10px;
+}
+
+.logo {
+  font-variant: small-caps;
+  font-size: 50px;
+  font-weight: 900;
+  letter-spacing: 20px;
+  margin-bottom: 0px;
+}
+
+.sub-logo {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 9px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+header nav {
+margin-top: -9px;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-inline-start: 0px;
+}
+
+header nav ul li {
+  list-style-type: none;          /* removes bullets from line items */
+}
+
+header nav ul li a:link    {color: #D7CFC9;}
+header nav ul li a:active  {color: #9d6b53}
 
 /* Footer */
 footer {
-  
+  background-color: #121B2C;        /* header background color (repeated in footer) */
+  color: #D7CFC9;                   /* header text color == body background color */
+  justify-content: center;
+}
+
+/* --------  DESKTOP VARIANT  -------- */
+
+@media all and (min-width: 700px) {
+
+  header {
+    flex-direction: row;
+  }
+
 }
