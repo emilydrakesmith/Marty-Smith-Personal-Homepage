@@ -36,7 +36,7 @@ header {
   flex-direction: column;
 }
 
-header section{
+header section {
   font-family: 'Verdana, sans-serif';
   text-align: center;
   margin-top: -40px;
@@ -74,14 +74,30 @@ header nav ul li {
   list-style-type: none;          /* removes bullets from line items */
 }
 
+header nav ul li a {
+  text-decoration: none;          /* removes underlining from hyperlinks */
+}
+
 header nav ul li a:link    {color: #D7CFC9;}
 header nav ul li a:active  {color: #9d6b53}
 
 /* Footer */
+
 footer {
-  background-color: #121B2C;        /* header background color (repeated in footer) */
-  color: #D7CFC9;                   /* header text color == body background color */
-  justify-content: center;
+  margin-top: 10px;                 /* adds negative space before the footer starts */
+  padding-top: 5px;                 /* adds blue space above text in footer */
+  padding-bottom: 20px;             /* trial and error this keeps my footer text vertically centered */
+  height: 45px;                     /* vertical height of footer */
+  background-color: #121B2C;      /* footer background color, coordinated with header and horizontal rules */
+  color: #D7CFC9;                 /* header & footer text color == body background color */
+}
+
+footer p {
+  text-align: center;
+  font-family: Verdana, sans-serif;   /* clean font with a reasonable fallback */
+  font-size: 12px;                    /* all font formatting to mimic header */
+  font-weight: 900;
+  letter-spacing: 4px;
 }
 
 /* --------  DESKTOP VARIANT  -------- */

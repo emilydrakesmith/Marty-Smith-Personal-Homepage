@@ -11,6 +11,7 @@ v1.1 --IN PROGRESS--  This version will reformate the site layout using Flexbox 
   -- Updated README.md for better use of markdown formatting.
   -- Updated page title to include 'Software Engineer'.
   -- Added page-section navigation links to `<header>`.
+  -- Changed footer text from `<h3>` to `<p>` and updated CSS accordingly.
 
 v1.01 Initial form of the website as accessed from GitHub.
 
