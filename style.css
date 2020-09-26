@@ -1,5 +1,4 @@
-/*
- *   CSS for v1.1 of my professional website
+/*   CSS for v1.1 of my professional website
  *   CSS is arranged to use a mobile-first responsive design
  */
 
@@ -7,9 +6,6 @@
 *, *:before, *:after {
   box-sizing: border-box;
 }
-
-/* DEBUG BORDER SCRIPT: */  /*  border: 3px solid red;  */
-
 
 /* --------  GENERAL STYLES  -------- */
 
@@ -111,15 +107,14 @@ h1, h2, h3, h4 {
   font-family: Manrope;
  }
 
-main hr {
-  width: 80%;
-  border: 1px solid #121B2C;   /* this gives the line its appearance */
-}
+ h3 {
+   text-align: left !important;
+ }
 
 form {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 98%;
 }
 
 form label {
@@ -127,12 +122,12 @@ form label {
 }
 
 form input {
-  display: block;
   font-size: 18px;
   margin-bottom: 10px;
 }
 
 form textarea {
+  font-size: 15px;
   height: 160px;
 }
 
@@ -202,14 +197,101 @@ footer p {
 
 /* --------  DESKTOP VARIANT  -------- */
 
-    /* TODO: Reformat <hr> for an absolute width */
+@media all and (min-width: 750px) {
 
-@media all and (min-width: 700px) {
+  #home {
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #intro-text {
+    width: 600px;
+    height: 250px;
+    padding-top: 40px;
+    margin-left: 50px;
+  }
+
+  #portfolio-1, #portfolio-3 {
+    display: flex;
+    flex-direction: row;
+    padding-right: 75px;
+    /*border: 3px solid red;*/       /* debugging purposes only */
+  }
+
+  #portfolio-2 {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-left: 75px;
+    text-align: right;
+    /*border: 3px solid red;*/       /* debugging purposes only */
+  }
+
+  #portfolio p {
+    margin: 8px 20px 8px 20px;
+    /*border: 3px solid green;*/     /* debugging purposes only */
+  }
+
+  .cmg-soon {
+    min-width: 400px;
+  }
+
+  .top-pg-lower {
+    margin-top: 62px !important;
+  }
+
+  #contact-content {
+    display: flex;
+  }
+
+  #contact-content * {
+    margin: 0px 10px 0px 10px;
+  }
+
+  #contact-left {
+    width: 100%;
+    min-width: 100px;
+    max-width: 600px;
+  }
+
+  #contact-form {
+    width: 100%;
+  }
+
+  #form-buttons {
+    margin: 10px 0px 15px 0px;
+  }
+
+  #contact p {
+    padding-left: 15px;
+  }
+
+  #social-media {
+    margin-bottom: 35px;
+    padding-left: 0px;
+  }
+
+  #social-media ol {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline-start: 0px;
+  }
+
+  #google-maps {
+    width: 100%;
+    min-width: 320px;
+  }
+
+  #google-maps iframe {
+    height: 100%;
+  }
+
+@media all and (min-width: 1000px) {
 
   header {
     flex-direction: row;
     justify-content: space-between;
-    /*position: fixed;      TODO: Fix nav anchors; currently jumping to anchors hidden under locked header*/
     width: 100%;
   }
   
@@ -229,5 +311,4 @@ footer p {
     margin-top: 18px;
     margin-right: 10px;
   }
-
 }
