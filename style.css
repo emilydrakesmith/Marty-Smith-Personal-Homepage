@@ -21,11 +21,17 @@ body {
 }
 
 /* Pseudo-classes for hyperlink colors */
-/* TODO: Change links back to stylized colors at end */
-a:link    {color: #2F0E07;}    /* custom color for un-clicked links */               /* TODO: #2F0E07 after troubleshooting */
-a:visited {color: #5C6060;}    /* custom color for clicked links */                  /* TODO: #5C6060 after troubleshooting */
-a:hover   {color: #772014;}    /* custom color for links when hovered over */        /* TODO: #772014 after troubleshooting */
-a:active  {color: #121B2C;}    /* custom color for links being actively clicked */   /* TODO: #121B2C after troubleshooting */
+a:link    {color: #2F0E07;}    /* custom color for un-clicked links */
+a:visited {color: #5C6060;}    /* custom color for clicked links */
+a:hover   {color: #772014;}    /* custom color for links when hovered over */
+a:active  {color: #121B2C;}    /* custom color for links being actively clicked */
+
+/* Generic formatting applied to all images on the page unless overridden elsewhere */
+img {
+  display: block;         /* necessary for centering pictures */
+  margin-left: auto;      /* without this pictures will align left */
+  margin-right: auto;     /* without this pictures will align right */
+}
 
 /* Header */
 header {
@@ -60,7 +66,7 @@ header section {
 }
 
 header nav {
-margin-top: -9px;
+  margin-top: -9px;
 }
 
 header nav ul {
@@ -78,8 +84,102 @@ header nav ul li a {
   text-decoration: none;          /* removes underlining from hyperlinks */
 }
 
-header nav ul li a:link    {color: #D7CFC9;}
-header nav ul li a:active  {color: #9d6b53}
+header nav ul li a:link       {color: #D7CFC9;}
+header nav ul li a:visited    {color: #D7CFC9;}
+header nav ul li a:hover      {color: #D7CFC9;}
+header nav ul li a:active     {color: #9D6B53}
+
+/* Main */
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+main section {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 20px 8px 20px 8px;
+}
+
+main section p, main section ul {
+  margin-top: -8px;
+}
+
+h1, h2, h3, h4 {
+  font-family: Manrope;
+ }
+
+main hr {
+  width: 80%;
+  border: 1px solid #121B2C;   /* this gives the line its appearance */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+form label {
+  margin-bottom: 3px;
+}
+
+form input {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+form textarea {
+  height: 160px;
+}
+
+form button {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+  width: 100px;
+  height: 30px;
+  margin: 8px 8px 8px 0px;
+}
+
+/* Applies to 1st <li> in the 'Contact Marty' article */
+.ol-linkedin {
+  list-style-image: url('images/linkedin-15px.png');  /* replaces <ol> list number with LinkedIn logo on ordered list */
+}
+
+/* Applies to 2nd <li> in the 'Contact Marty' article */
+.ol-github {
+  list-style-image: url('images/github-15px.png');  /* replaces <ol> number with GitHub logo on ordered list */
+}
+
+/* Applies to 3rd <li> in the 'Contact Marty' article */
+.ol-twitter {
+  list-style-image: url('images/twitter-15px.jpg');  /* replaces <ol> number with Twitter logo on ordered list */
+}
+
+.darker-background {
+  background-color: #C1B5AC;
+}
+
+.picture-frame {
+  width: 100%;             /* makes my self-portrait resize to screen width */
+  max-width: 314px;        /* prevents my sel-portrait from resizing larger than native size */
+  border-radius: 12px;     /* round off the corners of my self-portrait */
+  border: 1px solid;       /* add a border to my self-portrait */
+}
+
+.cmg-soon {
+  width: 100%;
+  max-width: 626px;
+  border-radius: 5px;
+  margin-bottom: 26px;
+}
+
+.add-mg-top-10px {
+  margin-top: 10px;
+}
 
 /* Footer */
 
@@ -102,10 +202,32 @@ footer p {
 
 /* --------  DESKTOP VARIANT  -------- */
 
+    /* TODO: Reformat <hr> for an absolute width */
+
 @media all and (min-width: 700px) {
 
   header {
     flex-direction: row;
+    justify-content: space-between;
+    /*position: fixed;      TODO: Fix nav anchors; currently jumping to anchors hidden under locked header*/
+    width: 100%;
+  }
+  
+  header section {
+    padding-left: 20px;
+    text-align: left
+  }
+
+  .sub-logo {
+    padding-bottom: 10px;
+  }
+
+  header nav {
+    width: 400px;
+    font-size: x-large;
+    font-style: bold;
+    margin-top: 18px;
+    margin-right: 10px;
   }
 
 }

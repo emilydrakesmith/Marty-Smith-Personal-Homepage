@@ -14,9 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Marty Smith | Software Engineer</title> <!--- Text in browser tab and bookmark --->
     <link rel="icon" href="images/M-favicon-32px.png">   <!--- Added a custom favicon --->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css"> <!--- Added normalize.css stylesheet. --->
     <link href="style.css" rel="stylesheet" type="text/css"> <!--- My custom css sheet, will override normalize.css where conflicts exist --->
-    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet"> <!--- Import open-source font 'Permanent Marker' from Google APIs --->
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"> <!--- Import open-source font 'Manrope' from Google APIs --->
   </head> <!--- Head section ends --->
     
@@ -38,15 +36,76 @@
     </header> <!--- Header ends --->
 
     <main> <!--- Main begins --->
-      <p>Footer has been tested. It will be affixed to the bottom of the screen properly when there's enough content to get it there.</p>
+      <section id="home"> <!--- 'Introduction' begins --->
+        <img src="images/self-portrait.jpg" class="picture-frame" alt="Self-portrait of Marty Smith, circa 2016.">
+        <h1>Hi, I'm Marty Smith!</h1>
+        <p>I'm a software engineer in Columbia, South Carolina.</p>
+        <p>I enjoy writing code that's clean, intuitive, modular, and utilizes creative solutions for efficient data processing and storage.  My favorite projects involve finding innovative software solutions to technical challenges in science and industry.</p>
+        <!--- I also think that documentation is outstanding place for dry, sarcastic humor. --->
+      </section>
+
+      <section id="about" class="darker-background"> <!--- 'About Marty' begins --->
+        <h2>About Marty</h2>
+        <p>Like a chef who knows that proper measurements are no substitute for good taste and a sharp palette, I'm a full stack developer who applies a great deal of customization and attention to even the most minute detail to my projects.  No two builds are the same nor are the needs of two different clients, and I take great pride in producing outstanding, innovative work for all my creations.  In addition to my work as a developer, I've spent significant time in the automotive and biotech industries.</p>
+        <p>Programming is a team sport and I'm always looking for new collaborators, projects, and opportunities.  If you'd like to work with me so we can grow our skills as a team or you'd like to add my talents to your organization don't hesitate to reach out to me.  I'm also available to your organization as a consultant and actively seeking volunteer opportunities for causes I believe in.</p>
+        <p>Languages I'm proficient with include:</p>
+        <ul>
+          <li>Python 3</li>
+          <li>HTML5 & CSS</li>
+          <li>JavaScript (ES6+)</li>
+          <li>C++</li>
+        </ul>
+        <p>When not locked in front of my computer working on a project, I can be found enjoying a good movie, taking the trailer on a camping trip with my family, barbecuing a pork shoulder in the back yard, or complaining to the TV about the New York Rangers' power play.  I prefers my steak rare, takes my gin with tonic and rosemary, and will accept a meatball cookoff challenge from anyone.  My favorite homes away from home are New Orleans and Cape Cod.<p>
+        <p>I'm always open to hearing about new business opportunities and potential collaborations.  Here are a few places to learn more about me and get in touch.</p>
+      </section>
+
+      <section id="portfolio"> <!--- 'Portfolio' begins --->
+        <h2>Portfolio</h2>
+        <article>
+          <h3>Gene Structural Analyzer App</h3>
+          <img src="/images/coming-soon.jpg" class="cmg-soon" alt="Coming Soon">
+          <p>Spicy jalapeno bacon ipsum dolor amet bresaola shank venison doner. Strip steak chicken pig chislic capicola. Flank leberkas pig sausage shankle, meatball beef alcatra biltong frankfurter ball tip. Beef kevin short loin, tri-tip leberkas buffalo brisket tail bacon drumstick. Buffalo tongue tri-tip, brisket ham hock salami pig fatback. Shank tail meatloaf tri-tip, pork filet mignon turducken leberkas alcatra burgdoggen. Porchetta sausage tri-tip, shankle t-bone ball tip turkey ribeye picanha buffalo pastrami tongue bresaola jerky chislic.</p>
+        </article>
+        <article>
+          <h3>Pandemic Simulator App</h3>
+          <img src="/images/coming-soon.jpg" class="cmg-soon" alt="Coming Soon">
+          <p>Pancetta tail ground round brisket strip steak fatback ribeye pork biltong drumstick turducken short loin chislic. Jowl chicken beef ribs ham, swine boudin tri-tip. Meatball chicken shank short ribs shoulder jerky cow. Shoulder chuck sirloin alcatra ground round porchetta bresaola pork chop boudin pork. Alcatra turkey short ribs chuck. Chuck shank prosciutto, kielbasa corned beef kevin chicken tongue bresaola.</p>
+        </article>
+      </section>
+            
+      <section id="contact"> <!--- 'Contact' begins --->
+        <h2>Contact Marty</h2>
+        <!--- Since I don't really like numbered lists I've replaced the numbers with images. --->
+        <ol>
+          <li class="ol-linkedin"><a href="https://www.linkedin.com/in/martin-smith-9b72a825/" target="_blank">LinkedIn</a></li>
+          <li class="ol-github"><a href="https://github.com/mhsmith321/" target="_blank">GitHub</a></li>
+          <li class="ol-twitter"><a href="https://twitter.com/doctrfed" target="_blank">Twitter</a></li>
+        </ol>
+        <form action="https://formspree.io/xdoporzz" method="post">
+          <label for="contact-name">Your Name</label>
+          <input id="contact-name" type="text" name="contact-name" autofocus="on" required />
+
+          <label for="contact-email">Your Email</label>
+          <input id="contact-email" type="text" name="contact-email" required />
+
+          <label for="form-message">Your Message</label>
+          <textarea id="form-message" name="form-message" required maxlength="1000"></textarea>
+
+          <div>
+            <button type="submit">Let's Talk!</button>
+            <button type="reset">Reset</button>
+          </div>
+        </form>
+        <p class="add-mg-top-10px">Or feel free to send me an <a href="mailto:marty.smith01@yahoo.com" >email</a>!</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105800.33237209414!2d-81.00763940813292!3d34.03719118046132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f8a5697931d1e3%3A0xf32808f4b379fa96!2sColumbia%2C%20SC!5e0!3m2!1sen!2sus!4v1601085566437!5m2!1sen!2sus" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </section>
     </main> <!--- Main ends --->
 
     <footer> <!--- Footer begins --->
       <p>© Martin H Smith</p>
     </footer> <!--- Footer begins --->
-
-    <!--- Commenting out scripts, not using any, don't want to cause an issue when there's no file to load.
+    
     <script src="script.js"></script>
-    --->
+    
   </body> <!--- Body section ends --->
 </html> <!--- HTML reading terminated --->

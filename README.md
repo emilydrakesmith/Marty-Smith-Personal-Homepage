@@ -12,6 +12,12 @@ v1.1 --IN PROGRESS--  This version will reformate the site layout using Flexbox 
   -- Updated page title to include 'Software Engineer'.
   -- Added page-section navigation links to `<header>`.
   -- Changed footer text from `<h3>` to `<p>` and updated CSS accordingly.
+  -- Added a 'Portfolio' section with placeholder content.  Will later be replaced with samples of my work.
+  -- Added a contact form to 'Contact' section.
+  -- Added Google Maps Columbia, SC to 'Contact' section.
+  -- Moved content with social networking links from 'Contact' to 'About Me'.
+  -- Moved basic personal information from 'About Me' to 'Introduction'.
+  -- Removed `<hr>` elements, now using differential background color for visible seaparation of sections.
 
 v1.01 Initial form of the website as accessed from GitHub.
 
