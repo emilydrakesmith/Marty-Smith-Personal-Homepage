@@ -179,7 +179,6 @@ form button {
 /* Footer */
 
 footer {
-  margin-top: 10px;                 /* adds negative space before the footer starts */
   padding-top: 5px;                 /* adds blue space above text in footer */
   padding-bottom: 20px;             /* trial and error this keeps my footer text vertically centered */
   height: 45px;                     /* vertical height of footer */
@@ -285,6 +284,13 @@ footer p {
 
   #google-maps iframe {
     height: 100%;
+    width="98%";
+    height="300";
+    frameborder="0";
+    style="border:0;";
+    allowfullscreen="";
+    aria-hidden="false";
+    tabindex="0";
   }
 
 @media all and (min-width: 1000px) {
