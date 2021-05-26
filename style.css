@@ -1,5 +1,5 @@
-/*   CSS for v1.1 of my professional website
- *   CSS is arranged to use a mobile-first responsive design
+/**   CSS for v1.1 of my professional website
+ *    CSS is arranged to use a mobile-first responsive design
  */
 
 /* Set all HTML elements with border-box sizing, also accounts for pseudo-elements */
@@ -105,11 +105,11 @@ main section p, main section ul {
 
 h1, h2, h3, h4 {
   font-family: Manrope;
- }
+}
 
- h3 {
-   text-align: left !important;
- }
+h3 {
+  text-align: left !important;
+}
 
 form {
   display: flex;
@@ -160,14 +160,14 @@ form button {
 
 .picture-frame {
   width: 100%;             /* makes my self-portrait resize to screen width */
-  max-width: 314px;        /* prevents my sel-portrait from resizing larger than native size */
+  max-width: 314px;        /* prevents my self-portrait from resizing larger than native size */
   border-radius: 12px;     /* round off the corners of my self-portrait */
   border: 1px solid;       /* add a border to my self-portrait */
 }
 
 .cmg-soon {
   width: 100%;
-  max-width: 626px;
+  max-width: 640px;
   border-radius: 5px;
   margin-bottom: 26px;
 }
@@ -284,17 +284,12 @@ footer p {
 
   #google-maps iframe {
     height: 100%;
-    width="98%";
-    height="300";
-    frameborder="0";
-    style="border:0;";
-    allowfullscreen="";
-    aria-hidden="false";
-    tabindex="0";
+    width:98%;
+    height:300;
   }
+}
 
 @media all and (min-width: 1000px) {
-
   header {
     flex-direction: row;
     justify-content: space-between;

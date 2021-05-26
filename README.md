@@ -1,9 +1,9 @@
 # Marty-Smith-Personal-Homepage
-My personal homepage.
+My personal homepage.  Welcome!
 
 # Version Notes
 
-The version of my website currently live is 1.1.0.  In cases where I update the README without any updates to the website itself I do not update the version number or use branches for my work.  Each version number will lack a commit number until the next version is uploaded.  The commit number is always added retroactively as it's generated at the time that I commit the project to the host.  In general, for version number format X.Y.Z:
+The version of my website currently live is 1.0.2.  In cases where I update the README without any updates to the website itself I do not update the version number or use branches for my work.  Each version number will lack a commit number until the next version is uploaded.  The commit number is always added retroactively as it's generated at the time that I commit the project to the host.  In general, for version number format X.Y.Z:
 * X: increases in this number represent a complete overhaul of some section of the website or source code
 * Y: increases in this number represent a major functional change/aesthetic change to the website
 * Z: increases in this number represent changes that are relatively minor but still warrant a new commit 
@@ -17,7 +17,7 @@ The version of my website currently live is 1.1.0.  In cases where I update the 
 * This version will reformate the site layout using Flexbox and a mobile-first design.
 * Added `"initial-scale=1"` to HEAD for better scaling on different devices.
 * Added lang="en" attribute to the `<HTML>` tag.
-* Updated README.md for better use of markdown formatting.
+* Updated `README.md` for better use of markdown formatting.
 * Updated page title to include 'Software Engineer'.
 * Added page-section navigation links to `<header>`.
 * Changed footer text from `<h3>` to `<p>` and updated CSS accordingly.
@@ -30,6 +30,12 @@ The version of my website currently live is 1.1.0.  In cases where I update the 
 
 **v1.0.1 commit b6978cc74fbfba4897f1f46f55ebc923d0c3bc57**
 * Initial form of the website as accessed from GitHub.
+
+**v 1.0.2  |  25 May 2021  |  commit TBD  |  Current Version**
+* Fix syntax errors in `style.css` which oddly weren't breaking anything.
+* Update portfolio with information about and links to ScriptStud.io.
+* Add technologies and other proficiencies to the *About Marty* section.
+* Various minor edits for spelling, grammar, etc.
 
 # Tech Framework
 
@@ -55,11 +61,17 @@ The version of my website currently live is 1.1.0.  In cases where I update the 
 For an easy time reading the code files I recommend using a code viewer that wraps at no less than 160 characters.
 
 # Future Plans
+### Major
+* Rebuild website from the ground up, likely using Gatsby.
+* Utilize a dark scheme with higher-contract color choices.
+
+### Minor
 * Wrap text around & below an image as screen size changes.
 * Replace social media text links with graphics.
-* I can clean up the CSS a lot by using more div containers and id tags.
+* I can clean up the CSS a lot by using more `div` containers and `id` attribute tags.
 * Make different sections of the website switch to desktop variants at different widths.
 * Lock the header section when scrolling.
+* Left-justify text for portfolio items which are picture-right.
 
 # Contribute
 
