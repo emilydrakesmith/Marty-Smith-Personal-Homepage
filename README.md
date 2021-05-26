@@ -1,6 +1,6 @@
 <a id='top'></a>
 
-# Marty-Smith-Personal-Homepage
+# Introduction
 My personal homepage.  Welcome!
 
 This is the first webpage I ever built and as such it consists of static HTML, CSS, and no scripts whatsoever.  In the future I plan to completely rebuild this content into a 2.0 version with either `Next.js` or `Gatsby`, but until I have the time it will remain a static HTML page.
@@ -80,16 +80,16 @@ Please note that I have made significant updates to how I record version notes s
 **v 1.1.0 | 25 Sept 2020 | commit 13b3b1950e2d2fb59460520dc6511d0f10941ed6**
 * This version will reformat the site layout using Flexbox and a mobile-first design.
 * Added `"initial-scale=1"` to HEAD for better scaling on different devices.
-* Added lang="en" attribute to the `<HTML>` tag.
+* Added `lang='en'` attribute to the `<HTML>` tag.
 * Updated `README.md` for better use of markdown formatting.
-* Updated page title to include 'Software Engineer'.
+* Updated page title to include *Software Engineer*.
 * Added page-section navigation links to `<header>`.
-* Changed footer text from `<h3>` to `<p>` and updated CSS accordingly.
-* Added a 'Portfolio' section with placeholder content.  Will later be replaced with samples of my work.
-* Added a contact form to 'Contact' section.
-* Added Google Maps Columbia, SC to 'Contact' section.
-* Added a contact form to 'Contact' section.
-* Moved basic personal information from 'About Me' to 'Introduction'.
+* Changed `<footer>` text from `<h3>` to `<p>` and updated CSS accordingly.
+* Added a *Portfolio* section with placeholder content.  Will later be replaced with samples of my work.
+* Added a contact form to *Contact* section.
+* Added Google Maps Columbia, SC to *Contact* section.
+* Added a contact form to *Contact* section.
+* Moved basic personal information from *About Me* to *Introduction*.
 * Removed `<hr>` elements, now using differential background color for visible seaparation of sections.
 
 **v 1.1.1 | 26 Sept 2020 | commit c1cc25dcfa302c29006f4d81288e9addf8b83254**
@@ -105,11 +105,17 @@ Please note that I have made significant updates to how I record version notes s
 * Add technologies and other proficiencies to the *About Marty* section.
 * Various minor edits for spelling, grammar, etc.
 
-**v 1.0.3 | 26 May 2021 | commit TBD | Current Version**
+**v 1.0.3 | 26 May 2021 | commit 2500cf2cfce59d2962ecf8dc9baa19fe93211c4f**
 * Built out `Version Notes` section of this `README.md` using commit notes accessed via `git log` in the CLI.
   * With the exception of commits `13b3b1950e2d2fb59460520dc6511d0f10941ed6` and `41f88f205314cac7025a9a13a393fce7be0bf51b`, all commits prior to this were written from `git log` records and were not made contemporarily.  They should be considered limited in scope and not all-inclusive of changed/additions that commit represents.
 * Added a *Table of Contents* section to this `README.md` file.
 * Added *Back to Page Top* links to section footers in this `README.md` file.
+
+**v 1.0.4 | 26 May 2021 | commit TBD | Current Version**
+* Minor formatting changes to old version notes in `README.md` for stylistic consistency.
+* Removed link to `scripts.js` from bottom of `index.html` file.  I don't have any scripts presently and it was throwing errors.
+* Text for Portfolio Item #2 is now left-justified.
+* Fixed bug with unequal image sizing for portfolio items.  However, they no longer dynamically resize; need to fix this later.
 
 [Back to Page Top](#top)
 <a id='tech-framework'></a>
@@ -152,7 +158,8 @@ For an easy time reading the code files I recommend using a text editor wrapping
 * I can clean up the CSS a lot by using more `div` containers and `id` attribute tags.
 * Make different sections of the website switch to desktop variants at different widths.
 * Lock the header section when scrolling.
-* Left-justify text for portfolio items which are picture-right.
+* Make portfolio images resize dynamically based on parent-container width.
+* Style portfolio items and *image-right* and *image-left* instead of by `id` attribute.
 
 [Back to Page Top](#top)
 <a id='contribute'></a>
