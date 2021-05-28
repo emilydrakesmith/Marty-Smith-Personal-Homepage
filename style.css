@@ -36,6 +36,7 @@ header {
   color: #D7CFC9;                   /* header text color == body background color */
   display: flex;
   flex-direction: column;
+  /*position: fixed;*/
 }
 
 header section {
