@@ -18,7 +18,7 @@ This is the first webpage I ever built and as such it consists of static HTML, C
 
 # Version Notes
 
-The version of my website currently live is **1.0.6.1**.  In cases where I update the README without any updates to the website itself I do not update the version number or use branches for my work.  Each version number will lack a commit number until the next version is uploaded.  The commit number is always added retroactively as it's generated at the time that I commit the project to the host.  In general, for version number format X.Y.Z:
+The version of my website currently live is **1.0.7**.  In cases where I update the README without any updates to the website itself I do not update the version number or use branches for my work.  Each version number will lack a commit number until the next version is uploaded.  The commit number is always added retroactively as it's generated at the time that I commit the project to the host.  In general, for version number format X.Y.Z:
 * X: increases in this number represent a complete overhaul of some section of the website or source code
 * Y: increases in this number represent a major functional change/aesthetic change to the website
 * Z: increases in this number represent changes that are relatively minor but still warrant a new commit
@@ -119,14 +119,18 @@ Please note that I have made significant updates to how I record version notes s
 
 #### v 1.0.5 | 27 May 2021 | commit fa23c253e1ebfc03579a0adc38c9a5c73953afae
 * Changed stylying on *Version Control* sub-headers in `README.md` from boldface (`**[Content]**`) to `h4` (`#### [Content]`).
-* Added *Job Hound* to *Portfolio* section of the webpage.
+* Added *Job Hound* to the *Portfolio* section of the webpage.
 
 #### v 1.0.6 | 27 May 2021 | commit 80b6d901e32bebb7a811f5fe92b01fde67b6e53d
-* Added *SoQuiz.me* to *Portfolio* section of the webpage.
+* Added *SoQuiz.me* to the *Portfolio* section of the webpage.
 
-#### v 1.0.6.1 | 28 May 2021 | commit TBD | Current Version
+#### v 1.0.6.1 | 28 May 2021 | commit 97007e970161445e33ab531a45987cd2c328129a
 * Updated preview image for *Job Hound* to reflect new styling on the app.
 * Fixed filepath error with *Job Hound* preview image.
+
+#### v 1.0.7 | 28 May 2021 | commit TBD | Current Version
+* Added *Tic Tac Toe* to the *Portfolio* section of the webpage.
+* Added `target='_blank'` attribute to several `<a>` hyperlinks it was missing from.
 
 [Back to Page Top](#top)
 <a id='tech-framework'></a>

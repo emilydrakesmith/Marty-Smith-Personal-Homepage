@@ -218,7 +218,7 @@ footer p {
     /*border: 3px solid red;*/       /* debugging purposes only */
   }
 
-  #portfolio-2 {
+  #portfolio-2, #portfolio-4 {
     display: flex;
     flex-direction: row-reverse;
     padding-left: 75px;
@@ -231,7 +231,7 @@ footer p {
     /*border: 3px solid green;*/     /* debugging purposes only */
   }
 
-  #portfolio-2 p {
+  #portfolio-2 p, #portfolio-4 p {
     text-align: left;
   }
 
