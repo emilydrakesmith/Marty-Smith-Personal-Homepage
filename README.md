@@ -18,7 +18,7 @@ This is the first webpage I ever built and as such it consists of static HTML, C
 
 # Version Notes
 
-The version of my website currently live is **1.0.6**.  In cases where I update the README without any updates to the website itself I do not update the version number or use branches for my work.  Each version number will lack a commit number until the next version is uploaded.  The commit number is always added retroactively as it's generated at the time that I commit the project to the host.  In general, for version number format X.Y.Z:
+The version of my website currently live is **1.0.6.1**.  In cases where I update the README without any updates to the website itself I do not update the version number or use branches for my work.  Each version number will lack a commit number until the next version is uploaded.  The commit number is always added retroactively as it's generated at the time that I commit the project to the host.  In general, for version number format X.Y.Z:
 * X: increases in this number represent a complete overhaul of some section of the website or source code
 * Y: increases in this number represent a major functional change/aesthetic change to the website
 * Z: increases in this number represent changes that are relatively minor but still warrant a new commit
@@ -121,8 +121,12 @@ Please note that I have made significant updates to how I record version notes s
 * Changed stylying on *Version Control* sub-headers in `README.md` from boldface (`**[Content]**`) to `h4` (`#### [Content]`).
 * Added *Job Hound* to *Portfolio* section of the webpage.
 
-#### v 1.0.6 | 27 May 2021 | commit TBD | Current Version
+#### v 1.0.6 | 27 May 2021 | commit 80b6d901e32bebb7a811f5fe92b01fde67b6e53d
 * Added *SoQuiz.me* to *Portfolio* section of the webpage.
+
+#### v 1.0.6.1 | 28 May 2021 | commit TBD | Current Version
+* Updated preview image for *Job Hound* to reflect new styling on the app.
+* Fixed filepath error with *Job Hound* preview image.
 
 [Back to Page Top](#top)
 <a id='tech-framework'></a>
@@ -162,7 +166,7 @@ For an easy time reading the code files I recommend using a text editor wrapping
 * Alter `.git` repo to use a `main` rather than a `master` branch.
 * Wrap text around & below an image as screen size changes.
 * Replace social media text links with graphics.
-* I can clean up the CSS a lot by using more `div` containers and `id` attribute tags.
+* I can clean up the CSS a lot by using more `<div>` containers and `id` attribute tags.
 * Make different sections of the website switch to desktop variants at different widths.
 * Make portfolio images resize dynamically based on parent-container width.
 * Lock header at top of screen.
