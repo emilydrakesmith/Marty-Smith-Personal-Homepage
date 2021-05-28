@@ -18,7 +18,7 @@ This is the first webpage I ever built and as such it consists of static HTML, C
 
 # Version Notes
 
-The version of my website currently live is 1.0.3.  In cases where I update the README without any updates to the website itself I do not update the version number or use branches for my work.  Each version number will lack a commit number until the next version is uploaded.  The commit number is always added retroactively as it's generated at the time that I commit the project to the host.  In general, for version number format X.Y.Z:
+The version of my website currently live is **1.0.6**.  In cases where I update the README without any updates to the website itself I do not update the version number or use branches for my work.  Each version number will lack a commit number until the next version is uploaded.  The commit number is always added retroactively as it's generated at the time that I commit the project to the host.  In general, for version number format X.Y.Z:
 * X: increases in this number represent a complete overhaul of some section of the website or source code
 * Y: increases in this number represent a major functional change/aesthetic change to the website
 * Z: increases in this number represent changes that are relatively minor but still warrant a new commit
@@ -111,14 +111,18 @@ Please note that I have made significant updates to how I record version notes s
 * Added a *Table of Contents* section to this `README.md` file.
 * Added *Back to Page Top* links to section footers in this `README.md` file.
 
-#### v 1.0.4 | 26 May 2021 | commit 2500cf2cfce59d2962ecf8dc9baa19fe93211c4f
+#### v 1.0.4 | 26 May 2021 | commit 7c98e1f14db2d3c0374c46837a1a852a77e8a8c7
 * Minor formatting changes to old version notes in `README.md` for stylistic consistency.
 * Removed link to `scripts.js` from bottom of `index.html` file.  I don't have any scripts presently and it was throwing errors.
 * Text for Portfolio Item #2 is now left-justified.
 * Fixed bug with unequal image sizing for portfolio items.  However, they no longer dynamically resize; need to fix this later.
 
-#### v 1.0.5 | 26 May 2021 | commit TBD | Current Version
+#### v 1.0.5 | 27 May 2021 | commit fa23c253e1ebfc03579a0adc38c9a5c73953afae
 * Changed stylying on *Version Control* sub-headers in `README.md` from boldface (`**[Content]**`) to `h4` (`#### [Content]`).
+* Added *Job Hound* to *Portfolio* section of the webpage.
+
+#### v 1.0.6 | 27 May 2021 | commit TBD | Current Version
+* Added *SoQuiz.me* to *Portfolio* section of the webpage.
 
 [Back to Page Top](#top)
 <a id='tech-framework'></a>
