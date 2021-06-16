@@ -1,9 +1,11 @@
 <a id='top'></a>
 
 # Introduction
-My personal homepage.  Welcome!
+My personal homepage.  Welcome!  [Click here to view it.](https://martysmith.tech/)
 
-This is the first webpage I ever built and as such it consists of static HTML, CSS, and no scripts whatsoever.  In the future I plan to completely rebuild this content into a 2.0 version with either `Next.js` or `Gatsby`, but until I have the time it will remain a static HTML page.
+I am currently using `Gatsby.js` to completely rebuild this website from the ground-up.  If the link above goes to a page with a beige & navy blue theme then version 2.0 is being developed. [Click here to see the v 2.0 repository on GitHub.](https://github.com/mhsmith321/Marty-personal-website-2.0)
+
+Once version 2.0 of my website is live, I'll probably leave a live version of this site accessible as a minor piece in my portfolio (eg `/projects/other-projects/first-website` or something of that nature.)  It will likely be identical, but with hyperlinks updated to not reference pathway relative to the main index of the domain.
 
 # Table of Contents
 
@@ -18,7 +20,7 @@ This is the first webpage I ever built and as such it consists of static HTML, C
 
 # Version Notes
 
-The version of my website currently live is **1.0.7**.  In cases where I update the README without any updates to the website itself I do not update the version number or use branches for my work.  Each version number will lack a commit number until the next version is uploaded.  The commit number is always added retroactively as it's generated at the time that I commit the project to the host.  In general, for version number format X.Y.Z:
+The version of my website currently live is **1.0.7.1**.  In cases where I update the README without any updates to the website itself I do not update the version number or use branches for my work.  Each version number will lack a commit number until the next version is uploaded.  The commit number is always added retroactively as it's generated at the time that I commit the project to the host.  In general, for version number format X.Y.Z:
 * X: increases in this number represent a complete overhaul of some section of the website or source code
 * Y: increases in this number represent a major functional change/aesthetic change to the website
 * Z: increases in this number represent changes that are relatively minor but still warrant a new commit
@@ -128,9 +130,12 @@ Please note that I have made significant updates to how I record version notes s
 * Updated preview image for *Job Hound* to reflect new styling on the app.
 * Fixed filepath error with *Job Hound* preview image.
 
-#### v 1.0.7 | 28 May 2021 | commit TBD | Current Version
+#### v 1.0.7 | 28 May 2021 | commit 2e8cc02c0b4d7e2794996eb58fddcc0d5dd1f1c1
 * Added *Tic Tac Toe* to the *Portfolio* section of the webpage.
 * Added `target='_blank'` attribute to several `<a>` hyperlinks it was missing from.
+
+#### v 1.0.7.1 | 16 June 2021 | commit -- | Current Version
+* Updated *Introduction* in `README.md` to acknowledge a new version of this site is under construction.
 
 [Back to Page Top](#top)
 <a id='tech-framework'></a>
